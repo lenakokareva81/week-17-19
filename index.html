@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick=generator() value="сгенерировать">
+</body>
+<script>
+    const generator = () => {
+        let randArr=[];
+        let sum = 0;
+        let mult =0;
+        let randStr='';
+        for (let i = 0; i < 10; i++) { 
+            randArr[i]=Math.round (Math.random()*20 - 10);
+            sum += randArr[i];
+            mult *= randArr[i];
+            randStr=`${randStr},${randArr[i]}`;
+            }
+        mean = sum / 10;
+        let max = Math.max.apply(null , randArr);
+        let min = Math.min.apply(null , randArr);
+     console.log(`сгенерировали ${randArr}`);
+     console.log(`сумма ${sum}`);
+     console.log(`среднее арифметическое ${mean}`);
+     console.log(`произведение ${mult}`);
+     console.log(`максимальное ${max}`);
+     console.log(`минимальное ${max}`);
+    }
+</script>
+</html>

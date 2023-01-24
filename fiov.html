@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <input type="text" class="initial" placeholder="введите ФИО через пробел">
+    <input type="button" onclick=pole() value="сгенерировать">
+</form>
+</body>
+<script>
+    const pole = () => {
+        let initial=document.getElementsByClassName("initial")[0].value;
+        let lowercase=initial.toLowerCase();
+        let array = lowercase.split(" ");
+    
+        for (let i= 0 ; i < array.length; i++) {
+           if (array[i] == "") {
+               array.splice( i , 1 );
+               i=i-1;
+               console.log(array);}
+           else{
+           // let n=array[i].splice( 1 , array[i].length-1); пыталась так сделать не удалось, не понимаю почему
+             let n='';
+             for (let j= 1 ; j < array[i].length; j++) {
+                      n += array[i][j];
+                       }
+            array[i]=array[i][0].toUpperCase() + n;
+            n = '';
+                                }
+                  }
+      console.log(`фамилия ${array[0]}`);
+      console.log(`имя ${array[1]}`);
+      console.log(`отчество ${array[2]}`);
+    }
+        
+</script>
+</html>
