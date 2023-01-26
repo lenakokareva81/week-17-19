@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=<device-width>, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class ValidatorStatic {
+
+             static isEmail(input) {
+             let isEmpty = false;
+             let regexp = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
+             isEmpty = regexp.test(input);
+             return isEmpty;
+                }
+            static isDomain(input) {
+             let isEmpty = false;
+             let regexp =/^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$/;
+             isEmpty = regexp.test(input);
+             return isEmpty;
+                }
+            static isDate(input) {
+             let isEmpty = false;
+             let regexp =/^(\d{1,2})([\.])(\d{1,2})\2(\d{4}|\d{2})$/;
+             isEmpty = regexp.test(input);
+             return isEmpty;
+                }
+             static isPhone(input) {
+             let isEmpty = false;
+             let regexp = /(\+7|8)[\s(]*\d{3}[)\s]*\d{3}[\s-]?\d{2}[\s-]?\d{2}/;
+             isEmpty = regexp.test(input);
+             return isEmpty;
+                }
+
+
+           }
+
+console.log(ValidatorStatic.isEmail('alisa@mail.ru'));
+console.log(ValidatorStatic.isDomain('itgirlschool.ru'));
+console.log(ValidatorStatic.isDate('12.05.2021'));
+console.log(ValidatorStatic.isPhone('+7(910)123-45-67')); //тут используем формат своей страны
+
+class Validator {
+
+ isEmail(input) {
+let isEmpty = false;
+let regexp = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
+isEmpty = regexp.test(input);
+return isEmpty;
+   }
+isDomain(input) {
+let isEmpty = false;
+let regexp =/^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$/;
+isEmpty = regexp.test(input);
+return isEmpty;
+   }
+isDate(input) {
+let isEmpty = false;
+let regexp =/^(\d{1,2})([\.])(\d{1,2})\2(\d{4}|\d{2})$/;
+isEmpty = regexp.test(input);
+return isEmpty;
+   }
+isPhone(input) {
+let isEmpty = false;
+let regexp = /(\+7|8)[\s(]*\d{3}[)\s]*\d{3}[\s-]?\d{2}[\s-]?\d{2}/;
+isEmpty = regexp.test(input);
+return isEmpty;
+   }
+
+
+}
+
+//стандартная вызывается вот так
+var validator = new Validator();
+console.log(validator.isEmail('alisa@mail.ru'));
+console.log(validator.isDomain('itgirlschool.ru'));
+console.log(validator.isDate('12.05.2021'));
+console.log(validator.isPhone('+7(910)123-45-67')); //тут используем формат своей страны
+
+
+
+// if (Validation.сheckEmptyInputs(document.getElementsByClassName('test'))) {
+//     //есть пустой элемент
+//     alert('Есть пустой элемент!');
+// }
+
+//          class Validator{
+//             constructor(data){
+//                 this.name = name
+//                 this.surname = surname
+//                 this.rate = rate
+//                 this.days = days
+//             }
+           
+//             getSalary() {
+//             return this.days*this.rate;
+//             }
+//         }
+
+        
+//         var worker = new Worker('Иван', 'Иванов', 10, 31);
+
+//         console.log(worker.name); //выведет 'Иван'
+//         console.log(worker.surname); //выведет 'Иванов'
+//         console.log(worker.rate); //выведет 10
+//         console.log(worker.days); //выведет 31
+//         console.log(worker.getSalary()); //выведет 310 - то есть 10*31
+        
+    </script>
+</body>
+</html>
