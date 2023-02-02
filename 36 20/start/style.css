@@ -1,0 +1,24 @@
+.icon {
+  /* goldenrod */
+  fill: black ;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -3px;
+  left: 1px;
+}
+.container__label {
+  position: relative;
+}
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.container__input {
+  /* display: none; */
+  position: relative;
+  opacity: 0;
+  z-index: 1;
+}
