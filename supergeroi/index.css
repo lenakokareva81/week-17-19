@@ -96,18 +96,29 @@ color: #000000;
 padding-top: 20px;
 padding-left: 50px;
 }
-.card__link a{
+.card__link{
+    cursor: pointer;
+    
+    /* width: 200px;
+    height: auto;
+    border: 1px solid rgb(23, 23, 23);
+    border-radius: 20px;
+    background-color: rgb(255, 231, 52);   */
+}
+.card__link p{
+    
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 17px;
 line-height: 20px;
-/* identical to box height */
 
-text-decoration-line: underline
+text-decoration-line: line;
 color: #000000;
 padding-top: 20px;
 padding-left: 50px;
+
+ 
 }
 .card__more{
   display:none;

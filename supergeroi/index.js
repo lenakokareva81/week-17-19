@@ -144,13 +144,13 @@ function aboutSuper(nameSuper,infoSuper, img, alterego, friends,text, i){
                  <div class="card__name">${nameSuper}</div>
                  <div class="card__info">${infoSuper}</div>
                  <div class="card__link" >
-                 <a href="#" onclick="seeMore(${i})" >больше информации</a> </div>
+                 <p onclick="seeMore(${i})" >больше информации</p> </div>
                  <div class="card__more">
                     <p class="card__alterego">${alterego}</p> 
                     <p class="card__friends">друзья: ${friends}</p>
                     <p class="card__text">${text}</p>
                     <div class="card__link" >
-                         <a href="#" onclick="hideMore(${i})" >свернуть</a>
+                         <p onclick="hideMore(${i})" >свернуть</p>
                     </div>
                    </div>
              </div>`;}
@@ -162,13 +162,13 @@ function aboutSuper(nameSuper,infoSuper, img, alterego, friends,text, i){
                   <div class="card__name">${nameSuper}</div>
                   <div class="card__info">${infoSuper}</div>
                   <div class="card__link" >
-                  <a href="#" onclick="seeMore(${i})" >больше информации</a> </div>
+                  <p onclick="seeMore(${i})" >больше информации</p> </div>
                    <div class="card__more">
                    <p class="card__alterego">${alterego}</p> 
                    <p class="card__friends">друзья: ${friends}</p>
                    <p class="card__text">${text}</p>
                    <div class="card__link" >
-                        <a href="#" onclick="hideMore(${i})" >свернуть</a>
+                        <p onclick="hideMore(${i})" >свернуть</p>
                    </div>
                   </div>
             </div>
