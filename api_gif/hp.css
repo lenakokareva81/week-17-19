@@ -1,0 +1,17 @@
+.img {
+    width: 18vw;
+    margin:10px;
+    height: 20vw;
+    border-radius: 5px;
+    display: block;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: auto;
+    display:block ;
+}
+.karts{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);

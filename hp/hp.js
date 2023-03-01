@@ -1,5 +1,10 @@
 // https://harry-potter-api-en.onrender.com/db ссылка на гарри поттера
-    fetch('https://harry-potter-api-en.onrender.com/db')
+    fetch('https://harry-potter-api-en.onrender.com/db',{
+        Method: "GET",
+
+    }
+    
+    )
             .then(response => response.json())
             .then(user => {
                 let urlImg;
@@ -20,4 +25,11 @@
 
                 //  https://developers.giphy.com/explorer/
             .catch(error=> console.log(error));
+
+
+
+
+
+
+            
 

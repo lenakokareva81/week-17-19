@@ -96,7 +96,7 @@ let imgSuper ="";
 let raitingStar = "";
 
 for (let i = 0; i < numberSuper; i++) { 
-    nameSuper= supersObject[i].name;
+    nameSuper= supers[i].name;
     infoSuper= supersObject[i].occupation;
     alteregoSuper = supersObject[i].alterego;
     friendsSuper = supersObject[i].friends;
