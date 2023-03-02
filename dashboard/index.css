@@ -1,0 +1,121 @@
+.form {
+    display: inline-block;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+  
+    background-color: antiquewhite;
+    border: 1px solid burlywood;
+  border-radius: 10px ;
+  width: max-content;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  }
+  
+  .form__field {
+    margin-bottom: 10px;
+  }
+  
+  .form__error {
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+    display: none;
+  }
+  
+  .form input,textarea,select {
+    outline: none;
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .sample{
+    outline: none;
+    display: flex;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+  
+  }
+  .sample input{
+    width: 10px;
+  }
+  
+  .choice{
+    display: flex;
+    width: 20%;
+  }
+  /* .sex{
+    
+    width:10%;
+  } */
+  .form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    border: 0;
+    background-color: #ccc;
+    color: #fff;
+  }
+  fieldset{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .header{
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 20px;
+  
+  }
+  
+  input:valid:not(:placeholder-shown) {
+    border-color: green;
+  }
+  
+  input:invalid:not(:placeholder-shown) {
+    border-color: red;
+  }
+  input:invalid:not(:placeholder-shown) + .form__error {
+    display: block;
+  }
+  
+          h1{ font-family: serif;
+              padding: 20px;
+              color: rgb(60, 51, 38);}
+       
+      .text{
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          
+          padding: 10px 20px 5px 0px;
+          color: rgb(60, 51, 38);
+          margin: 0;
+          text-align: left;
+          font-size: 1em;
+      }
+      .form_text{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          padding: 10px 20px 5px 0px;
+          color: rgb(60, 51, 38);
+          margin: 0;
+          text-align: left;
+          font-size: 1em;
+      }
+      .subscribe{
+          padding: 5px 0px 15px 0px;
+          color: rgb(219, 86, 42);
+          margin: 0;
+          text-align: left;
+          font-size: 1em;
+      }
+      .tel{
+          display: flex;
+      }
